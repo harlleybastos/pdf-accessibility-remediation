@@ -1,0 +1,106 @@
+[Document] 
+  [Art] 
+    [P] DEPARTMENT OF COMMERCE
+    [P] International Trade Administration
+    [P] [C570959]
+    [H1] Certain Coated Paper Suitable For HighQuality Print Graphics Using SheetFed Presses from the Peoples Republic of China: Amended Affirmative Preliminary Countervailing …
+    [P] AGENCY: Import Administration, International Trade Administration, Department of Commerce. SUMMARY: The purpose of this amended affirmative preliminary determination is t…
+    [P] EFFECTIVEDATE: June 1, 2010.
+    [P] FORFURTHERINFORMATIONCONTACT: David Neubacher, AD/CVD Operations, Office 1, Import Administration, International Trade Administration, U.S. Department of Commerce, 14th S…
+    [H2] SUPPLEMENTARYINFORMATION:
+    [H3] Background
+    [P] On March 9, 2010, we published our preliminary determination stating that countervailable subsidies are being provided to producers and exporters of coated paper from the…
+    [H3] Scope of the Investigation
+    [P] The scope of this investigation consists of Coated Paper, which are certain coated paper and paperboard1in sheets suitable for high quality print graphics using sheetfed…
+    [P] Coated Paper includes: (a) coated free sheet paper and paperboard that meets this scope definition; (b) coated groundwood paper and paperboard produced from bleached chem…
+    [P] Coated Paper is typically (but not exclusively) used for printing multi colored graphics for catalogues, books, magazines, envelopes, labels and wraps, greeting cards, a…
+    [P] Specifically excluded from the scope are imports of paper and paperboard printed with final content printed text or graphics.
+    [P] As of 2009, imports of the subject merchandise are provided for under the following categories of the Harmonized Tariff Schedule of the United States (HTSUS): 4810.14…
+    [H3] Analysis of Alleged Significant Ministerial Error
+    [P] A ministerial error is defined in 19 CFR 351.224(f) as an error in addition, subtraction, or other arithmetic function, clerical error resulting from inaccurate copying…
+    [P] We have determined that the Preliminary Determination contained ministerial errors with respect to Gold East Trading (Hong Kong) Company Limited, Gold East Paper (Jiangsu…
+    [H3] Amended Preliminary Determination
+    [P] Because the errors alleged by Petitioners regarding the countervailable subsidy rate calculation for the Gold companies are significant, we are amending the preliminary c…
+    [Note id=fn1] 11Paperboard refers to Coated Paper that is heavier, thicker and more rigid than coated paper which otherwise meets the product description. In the context of Coated P…
+    [Note id=fn2] 2One of the key measurements of any grade of paper is brightness. Generally speaking, the brighter the paper the better the contrast between the paper and the ink. Bright…
+    [P] As a result of corrections of ministerial errors, the amended preliminary net countervailable subsidy rates are as follows:
+    [Table] 
+      [TR] 
+        [TH scope=Column] 
+          [P] Exporter/Manufacturer
+        [TH scope=Column] 
+          [P] Origi-nal Sub-sidy Rate
+        [TH scope=Column] 
+          [P] Amend-ed Sub-sidy Rate
+      [TR] 
+        [TH scope=Row] 
+          [P] Gold East Paper (Jiangsu) Co., Ltd, Gold Huasheng Paper Co., Ltd., Gold East Trading (Hong Kong) Company Ltd., Ningbo Zhonghua Paper Co., Ltd., and Ningbo Asia Pulp & Pap…
+        [TD] 
+          [P] 12.83
+        [TD] 
+          [P] 20.07
+      [TR] 
+        [TH scope=Row] 
+          [P] Shandong Sun Paper In-dustry Joint Stock Co., Ltd. and Yanzhou Tianzhang Paper Indus-try Co., Ltd.
+        [TD] 
+          [P] 3.92
+        [TD] 
+          [P] 3.92
+      [TR] 
+        [TH scope=Row] 
+          [P] All Others
+        [TD] 
+          [P] 8.38
+        [TD] 
+          [P] 12.00
+    [H3] Suspension of Liquidation
+    [P] The collection of bonds or cash deposits and suspension of liquidation will be revised, in accordance with section 703(d) and (f) of the Act. Specifically, we will instru…
+    [H3] International Trade Commission Notification
+    [P] In accordance with section 703(f) of the Act, we have notified the U.S. International Trade Commission (ITC) of our amended affirmative preliminary determination. If …
+    [P] This determination is issued and published pursuant to sections 703(f) and 777(i)(1) of the Act and 19 CFR 351.224(e).
+    [P] Dated: May 21, 2010. Ronald K. Lorentzen, Deputy Assistant Secretary for Import Administration.
+    [P] [FR Doc. 201013068 Filed 52810; 8:45 am]
+    [P] BILLING CODE 3510DSS
+  [Art] 
+    [P] DEPARTMENT OF COMMERCE
+    [P] International Trade Administration
+    [H1] Antidumping or Countervailing Duty Order, Finding, or Suspended Investigation; Advance Notification of Sunset Reviews
+    [P] AGENCY: Import Administration, International Trade Administration, Department of Commerce.
+    [H2] Background
+    [P] Every five years, pursuant to section 751(c) of the Tariff Act of 1930, as amended (the Act), the Department of Commerce (the Department) and the International Tr…
+    [H2] Upcoming Sunset Reviews for July 2010
+    [P] The following Sunset Reviews are scheduled for initiation in July 2010 and will appear in that months Notice of Initiation of Five-Year Sunset Reviews.
+    [Table] 
+      [TR] 
+        [TD] 
+        [TH scope=Column id=h-contact] 
+          [P] Department contact
+      [TR] 
+        [TH scope=Column colspan=2 id=h-ad] 
+          [P] Antidumping Duty Proceedings
+      [TR] 
+        [TH scope=Row id=r-poly] 
+          [P] Polychloroprene Rubber from Japan (A588046) (3rd Review)
+        [TD headers=['h-contact', 'h-ad', 'r-poly']] 
+          [P] Dana Mermelstein (202) 4821391.
+      [TR] 
+        [TH scope=Row id=r-wax] 
+          [P] Petroleum Wax Candles from the PRC (A570504) (3rd Review)
+        [TD headers=['h-contact', 'h-ad', 'r-wax']] 
+          [P] Jennifer Moats (202) 4825047.
+      [TR] 
+        [TH scope=Column colspan=2 id=h-cvd] 
+          [P] Countervailing Duty Proceedings
+      [TR] 
+        [TD headers=['h-cvd'] colspan=2] 
+          [P] No Sunset Review of countervailing duty orders is scheduled for initiation in July 2010.
+    [H2] Suspended Investigations
+    [P] No Sunset Review of suspended investigations is scheduled for initiation in July 2010.
+    [P] The Departments procedures for the conduct of Sunset Reviews are set forth in 19 CFR 351.218. Guidance on methodological or analytical issues relevant to the Department…
+    [P] Pursuant to 19 CFR 351.103(c), the Department will maintain and make available a service list for these proceedings. To facilitate the timely preparation of the service l…
+    [P] Please note that if the Department receives a Notice of Intent to Participate from a member of the domestic industry within 15 days of the date of initiation, the review …
+    [P] This notice is not required by statute but is published as a service to the international trading community.
+    [P] Dated: May 25, 2010. John M. Andersen, Acting Deputy Assistant Secretary for Antidumping and Countervailing Duty Operations.
+    [P] [FR Doc. 201013061 Filed 52810; 8:45 am]
+    [P] BILLING CODE 3510DSP
+  [Form] <Sig field: Digital signature field of the U.S. Government Publishing Office (authenticity seal)>

@@ -1,0 +1,380 @@
+[Document] 
+  [H1] Form W-4 (2005)
+  [P] Purpose. Complete Form W-4 so that youremployer can withhold the correct federal incometax from your pay. Because your tax situation maychange, you may want to refigure y…
+  [P] Exemption from withholding. If you are exempt,complete only lines 1, 2, 3, 4, and 7 and sign theform to validate it. Your exemption for 2005 expiresFebruary 16, 2006. See…
+  [P] Note. You cannot claim exemption from withholdingif (a) your income exceeds $800 and includes morethan $250 of unearned income (for example, interestand dividends) and (b…
+  [P] Basic instructions. If you are not exempt, completethe Personal Allowances Worksheet below. Theworksheets on page 2 adjust your withholdingallowances based on itemized de…
+  [P] earner/two-job situations. Complete all worksheetsthat apply. However, you may claim fewer (or zero)allowances.
+  [P] Head of household. Generally, you may claim headof household filing status on your tax return onlyif you are unmarried and pay more than 50% ofthe costs of keeping up a h…
+  [P] Tax credits. You can take projected tax credits intoaccount in figuring your allowable number of with-holding allowances. Credits for child or dependentcare expenses and …
+  [P] sheet below. See Pub. 919, How Do I Adjust MyTax Withholding? for information on converting yourother credits into withholding allowances.
+  [P] Nonwage income. If you have a large amount ofnonwage income, such as interest or dividends, con-sider making estimated tax payments using Form1040-ES, Estimated Tax for I…
+  [P] Two earners/two jobs. If you have a workingspouse or more than one job, figure the total numberof allowances you are entitled to claim on all jobsusing worksheets from on…
+  [P] Nonresident alien. If you are a nonresident alien,see the Instructions for Form 8233 before complet-ing this Form W-4.
+  [P] Check your withholding. After your Form W-4 takeseffect, use Pub. 919 to see how the dollar amountyou are having withheld compares to your projectedtotal tax for 2005. Se…
+  [P] Recent name change? If your name on line 1differs from that shown on your social securitycard, call 1-800-772-1213 to initiate a name changeand obtain a social security c…
+  [H2] Personal Allowances Worksheet (Keep for your records.)
+  [P] Enter 1for yourself if no one else can claim you as a dependent A A
+  [Form] <Tx field: Personal Allowances Worksheet, line A: enter 1 for yourself if no one else can claim you as a dependent>
+  [P] You are single and have only one job; orEnter 1if:B You are married, have only one job, and your spouse does not work; orB Your wages from a second job or your spouses…
+  [Form] <Tx field: Line B: enter 1 if you are single and have only one job; or married, have only one job, and your spouse does not work; or your wages from a second job or your …
+  [P] Enter 1foryour spouse. But, you may choose to enter-0-ifyou are married and have either a working spouse or C
+  [Form] <Tx field: Line C: enter 1 for your spouse (you may choose to enter 0 if you are married and have either a working spouse or more than one job)>
+  [P] more than one job. (Entering-0-mayhelp you avoid having too little tax withheld.) C
+  [P] Enter number of dependents (other than your spouse or yourself) you will claim on your tax return DD
+  [Form] <Tx field: Line D: number of dependents (other than your spouse or yourself) you will claim on your tax return>
+  [P] EE Enter 1ifyou will file as head of household on your tax return (see conditions under Head of household above)
+  [Form] <Tx field: Line E: enter 1 if you will file as head of household on your tax return>
+  [P] FF Enter 1 if you have at least $1,500 of child or dependent care expenses for which you plan to claim a credit
+  [Form] <Tx field: Line F: enter 1 if you have at least $1,500 of child or dependent care expenses for which you plan to claim a credit>
+  [P] (Note. Do not include child support payments. See Pub. 503, Child and Dependent Care Expenses, for details.)
+  [P] GChild Tax Credit (including additional child tax credit):
+  [P] If your total income will be less than $54,000 ($79,000 if married), enter 2 for each eligible child.
+  [P] If your total income will be between $54,000 and $84,000 ($79,000 and $119,000 if married), enter 1 for each eligible
+  [Form] <Tx field: Line G: Child Tax Credit, including additional child tax credit (number from the instructions in line G)>
+  [P] G child plus 1 additional if you have four or more eligible children.
+  [P] Add lines A through G and enter total here. (Note. This may be different from the number of exemptions you claim on your tax return.) HH
+  [Form] <Tx field: Line H: add lines A through G and enter the total (may be different from the number of exemptions you claim on your tax return)>
+  [P] If you plan to itemize or claim adjustments to income and want to reduce your withholding, see the Deductionsand Adjustments Worksheet on page 2.For accuracy,complete all…
+  [P] Cut here and give Form W-4 to your employer. Keep the top part for your records.
+  [P] OMB No. 1545-0010Employees Withholding Allowance CertificateW-4FormDepartment of the TreasuryInternal Revenue Service Whether you are entitled to claim a certain number …
+  [P] Type or print your first name and middle initial1Last name2Your social security number
+  [Form] <Tx field: Certificate line 1: type or print your first name and middle initial>
+  [Form] <Tx field: Certificate line 1: last name>
+  [Form] <Tx field: Line 2: your social security number, first 3 digits>
+  [Form] <Tx field: Line 2: your social security number, middle 2 digits>
+  [Form] <Tx field: Line 2: your social security number, last 4 digits>
+  [P] Home address (number and street or rural route)MarriedSingle3 Married, but withhold at higher Single rate.
+  [Form] <Tx field: Home address (number and street or rural route)>
+  [Form alt="Single"] <Btn field: Line 3: marital status (check one)>
+  [Form alt="Married"] <Btn field: Line 3: marital status (check one)>
+  [Form alt="Married, but withhold at higher Single rate"] <Btn field: Line 3: marital status (check one)>
+  [P] Note. If married, but legally separated, or spouse is a nonresident alien, check the Single box.
+  [P] City or town, state, and ZIP code 4If your last name differs from that shown on your social security
+  [Form] <Tx field: City or town, state, and ZIP code>
+  [P] card, check here. You must call 1-800-772-1213 for a new card.
+  [Form] <Btn field: Line 4: check if your last name differs from that shown on your social security card (you must call 1-800-772-1213 for a new card)>
+  [P] 55Total number of allowances you are claiming (from line H above or from the applicable worksheet on page 2)
+  [Form] <Tx field: Line 5: total number of allowances you are claiming (from line H above or from the applicable worksheet on page 2)>
+  [P] $6 6Additional amount, if any, you want withheld from each paycheck
+  [Form] <Tx field: Line 6: additional amount, if any, you want withheld from each paycheck, in dollars>
+  [P] 7I claim exemption from withholding for 2005, and I certify that I meet both of the following conditions for exemption.
+  [P] Last year I had a right to a refund of all federal income tax withheld because I had no tax liability and
+  [P] This year I expect a refund of all federal income tax withheld because I expect to have no tax liability.
+  [P] 7If you meet both conditions, writeExempthere
+  [Form] <Tx field: Line 7: if you meet both conditions for exemption from withholding for 2005, write Exempt here>
+  [P] Under penalties of perjury, I declare that I have examined this certificate and to the best of my knowledge and belief, it is true, correct, and complete.
+  [P] Employees signature
+  [P] (Form is not valid
+  [P] unless you sign it.) Date
+  [P] 8 9Employer identification number (EIN)Employers name and address (Employer: Complete lines 8 and 10 only if sending to the IRS.)Office code 10
+  [Form] <Tx field: Line 8, for the employer: employer's name and address (complete lines 8 and 10 only if sending to the IRS)>
+  [Form] <Tx field: Line 9, for the employer: office code (optional)>
+  [Form] <Tx field: Line 10, for the employer: employer identification number (EIN), first 2 digits>
+  [P] (optional)
+  [Form] <Tx field: Line 10, for the employer: employer identification number (EIN), last 7 digits>
+  [H2] Deductions and Adjustments Worksheet
+  [P] Note.Use this worksheet only if you plan to itemize deductions, claim certain credits, or claim adjustments to income on your 2005 tax return.
+  [P] Enter an estimate of your 2005 itemized deductions. These include qualifying home mortgage interest, 1
+  [P] charitable contributions, state and local taxes, medical expenses in excess of 7.5% of your income, and
+  [P] miscellaneous deductions. (For 2005, you may have to reduce your itemized deductions if your income
+  [Form] <Tx field: Deductions and Adjustments Worksheet, line 1: estimate of your 2005 itemized deductions, in dollars>
+  [P] is over $145,950 ($72,975 if married filing separately). See Worksheet 3 in Pub. 919 for details.) $1
+  [P] $10,000 if married filing jointly or qualifying widow(er)$$7,300 if head of household2 Enter:2$5,000 if single or married filing separately
+  [Form] <Tx field: Deductions and Adjustments Worksheet, line 2: $10,000 if married filing jointly or qualifying widow(er); $7,300 if head of household; $5,000 if single or marri…
+  [Form] <Tx field: Deductions and Adjustments Worksheet, line 3: subtract line 2 from line 1; if line 2 is greater than line 1, enter 0>
+  [P] $3Subtract line 2 from line 1. If line 2 is greater than line 1, enterÒ-0-Ó 3
+  [P] $Enter an estimate of your 2005 adjustments to income, including alimony, deductible IRA contributions, and student loan interest4 4
+  [Form] <Tx field: Deductions and Adjustments Worksheet, line 4: estimate of your 2005 adjustments to income, including alimony, deductible IRA contributions, and student loan in…
+  [P] $5Add lines 3 and 4 and enter the total. (Include any amount for credits from Worksheet 7 in Pub. 919) 5
+  [Form] <Tx field: Deductions and Adjustments Worksheet, line 5: add lines 3 and 4 and enter the total>
+  [P] $6Enter an estimate of your 2005 nonwage income (such as dividends or interest) 6
+  [Form] <Tx field: Deductions and Adjustments Worksheet, line 6: estimate of your 2005 nonwage income, such as dividends or interest, in dollars>
+  [P] $7Subtract line 6 from line 5. Enter the result, but not less thanÒ-0-Ó 7
+  [Form] <Tx field: Deductions and Adjustments Worksheet, line 7: subtract line 6 from line 5; enter the result, but not less than 0>
+  [P] Divide the amount on line 7 by $3,200 and enter the result here. Drop any fraction 88
+  [Form] <Tx field: Deductions and Adjustments Worksheet, line 8: divide the amount on line 7 by $3,200 and enter the result; drop any fraction>
+  [P] Enter the number from the Personal Allowances Worksheet, line H, page 1 99
+  [Form] <Tx field: Deductions and Adjustments Worksheet, line 9: number from the Personal Allowances Worksheet, line H, page 1>
+  [P] Add lines 8 and 9 and enter the total here. If you plan to use the Two-Earner/Two-Job Worksheet, also 10
+  [Form] <Tx field: Deductions and Adjustments Worksheet, line 10: add lines 8 and 9 and enter the total>
+  [P] enter this total on line 1 below. Otherwise, stop here and enter this total on Form W-4, line 5, page 1 10
+  [H2] Two-Earner/Two-Job Worksheet (See Two earners/two jobs on page 1.)
+  [P] Note. Use this worksheet only if the instructions under line H on page 1 direct you here.
+  [P] 1Enter the number from line H, page 1 (or from line 10 above if you used the Deductions and Adjustments Worksheet)1
+  [Form] <Tx field: Two-Earner/Two-Job Worksheet, line 1: number from line H, page 1 (or from line 10 above if you used the Deductions and Adjustments Worksheet)>
+  [P] 2Find the number in Table 1 below that applies to the LOWEST paying job and enter it here 2
+  [Form] <Tx field: Two-Earner/Two-Job Worksheet, line 2: number in Table 1 that applies to the lowest paying job>
+  [P] 3If line 1 is more than or equal to line 2, subtract line 2 from line 1. Enter the result here (if zero, enter
+  [Form] <Tx field: Two-Earner/Two-Job Worksheet, line 3: if line 1 is more than or equal to line 2, subtract line 2 from line 1 (if zero, enter 0) and enter it on Form W-4, line …
+  [P] Ò-0-Ó)and on Form W-4, line 5, page 1. Do not use the rest of this worksheet 3
+  [P] Note. If line 1 is less than line 2, enter Ò-0-Ó on Form W-4, line 5, page 1. Complete lines 4Ð9 below to calculate the additional
+  [P] withholding amount necessary to avoid a year-end tax bill.
+  [P] Enter the number from line 2 of this worksheet 44
+  [Form] <Tx field: Two-Earner/Two-Job Worksheet, line 4: number from line 2 of this worksheet>
+  [P] Enter the number from line 1 of this worksheet 55
+  [Form] <Tx field: Two-Earner/Two-Job Worksheet, line 5: number from line 1 of this worksheet>
+  [P] Subtract line 5 from line 4 66
+  [Form] <Tx field: Two-Earner/Two-Job Worksheet, line 6: subtract line 5 from line 4>
+  [P] $Find the amount in Table 2 below that applies to the HIGHEST paying job and enter it here 77
+  [Form] <Tx field: Two-Earner/Two-Job Worksheet, line 7: amount in Table 2 that applies to the highest paying job, in dollars>
+  [P] $Multiply line 7 by line 6 and enter the result here. This is the additional annual withholding needed 88
+  [Form] <Tx field: Two-Earner/Two-Job Worksheet, line 8: multiply line 7 by line 6; additional annual withholding needed, in dollars>
+  [P] Divide line 8 by the number of pay periods remaining in 2005. For example, divide by 26 if you are paid 9
+  [P] every two weeks and you complete this form in December 2004. Enter the result here and on Form W-4,
+  [P] line 6, page 1. This is the additional amount to be withheld from each paycheck $9
+  [Form] <Tx field: Two-Earner/Two-Job Worksheet, line 9: divide line 8 by the number of pay periods remaining in 2005; enter the result here and on Form W-4, line 6, in dollars>
+  [H3] Table 1: Two-Earner/Two-Job Worksheet
+  [Table] 
+    [TR] 
+      [TH scope=Column colspan=3] 
+        [P] Married Filing Jointly
+    [TR] 
+      [TH scope=Column] 
+        [P] If wages from HIGHESTpaying job areÑ
+      [TH scope=Column] 
+        [P] AND, wages from LOWESTpaying job areÑ
+      [TH scope=Column] 
+        [P] Enter online 2 above
+    [TR] 
+      [TH scope=Row] 
+        [P] $0 - $40,000
+      [TD] 
+        [P] $0 - $4,000
+      [TD] 
+        [P] 0
+    [TR] 
+      [TD] 
+        [P] 4,001 - 8,000
+      [TD] 
+        [P] 1
+    [TR] 
+      [TD] 
+        [P] 8,001 - 18,000
+      [TD] 
+        [P] 2
+    [TR] 
+      [TD] 
+        [P] 18,001 and over
+      [TD] 
+        [P] 3
+    [TR] 
+      [TH scope=Row] 
+        [P] $40,001 and over
+      [TD] 
+        [P] $0 - $4,000
+      [TD] 
+        [P] 0
+    [TR] 
+      [TD] 
+        [P] 4,001 - 8,000
+      [TD] 
+        [P] 1
+    [TR] 
+      [TD] 
+        [P] 8,001 - 18,000
+      [TD] 
+        [P] 2
+    [TR] 
+      [TD] 
+        [P] 18,001 - 22,000
+      [TD] 
+        [P] 3
+    [TR] 
+      [TD] 
+        [P] 22,001 - 25,000
+      [TD] 
+        [P] 4
+    [TR] 
+      [TD] 
+        [P] 25,001 - 30,000
+      [TD] 
+        [P] 5
+    [TR] 
+      [TD] 
+        [P] 30,001 - 36,000
+      [TD] 
+        [P] 6
+    [TR] 
+      [TD] 
+        [P] 36,001 - 45,000
+      [TD] 
+        [P] 7
+    [TR] 
+      [TD] 
+        [P] 45,001 - 50,000
+      [TD] 
+        [P] 8
+    [TR] 
+      [TD] 
+        [P] 50,001 - 60,000
+      [TD] 
+        [P] 9
+    [TR] 
+      [TD] 
+        [P] 60,001 - 65,000
+      [TD] 
+        [P] 10
+    [TR] 
+      [TD] 
+        [P] 65,001 - 75,000
+      [TD] 
+        [P] 11
+    [TR] 
+      [TD] 
+        [P] 75,001 - 90,000
+      [TD] 
+        [P] 12
+    [TR] 
+      [TD] 
+        [P] 90,001 - 100,000
+      [TD] 
+        [P] 13
+    [TR] 
+      [TD] 
+        [P] 100,001 - 115,000
+      [TD] 
+        [P] 14
+    [TR] 
+      [TD] 
+        [P] 115,001 and over
+      [TD] 
+        [P] 15
+  [Table] 
+    [TR] 
+      [TH scope=Column colspan=2] 
+        [P] All Others
+    [TR] 
+      [TH scope=Column] 
+        [P] If wages from LOWESTpaying job areÑ
+      [TH scope=Column] 
+        [P] Enter online 2 above
+    [TR] 
+      [TD] 
+        [P] $0 - $6,000
+      [TD] 
+        [P] 0
+    [TR] 
+      [TD] 
+        [P] 6,001 - 12,000
+      [TD] 
+        [P] 1
+    [TR] 
+      [TD] 
+        [P] 12,001 - 18,000
+      [TD] 
+        [P] 2
+    [TR] 
+      [TD] 
+        [P] 18,001 - 24,000
+      [TD] 
+        [P] 3
+    [TR] 
+      [TD] 
+        [P] 24,001 - 31,000
+      [TD] 
+        [P] 4
+    [TR] 
+      [TD] 
+        [P] 31,001 - 45,000
+      [TD] 
+        [P] 5
+    [TR] 
+      [TD] 
+        [P] 45,001 - 60,000
+      [TD] 
+        [P] 6
+    [TR] 
+      [TD] 
+        [P] 60,001 - 75,000
+      [TD] 
+        [P] 7
+    [TR] 
+      [TD] 
+        [P] 75,001 - 80,000
+      [TD] 
+        [P] 8
+    [TR] 
+      [TD] 
+        [P] 80,001 - 100,000
+      [TD] 
+        [P] 9
+    [TR] 
+      [TD] 
+        [P] 100,001 and over
+      [TD] 
+        [P] 10
+  [H3] Table 2: Two-Earner/Two-Job Worksheet
+  [Table] 
+    [TR] 
+      [TH scope=Column colspan=2] 
+        [P] Married Filing Jointly
+    [TR] 
+      [TH scope=Column] 
+        [P] If wages from HIGHESTpaying job areÑ
+      [TH scope=Column] 
+        [P] Enter online 7 above
+    [TR] 
+      [TH scope=Row] 
+        [P] $0 - $60,000
+      [TD] 
+        [P] $480
+    [TR] 
+      [TH scope=Row] 
+        [P] 60,001 - 110,000
+      [TD] 
+        [P] 800
+    [TR] 
+      [TH scope=Row] 
+        [P] 110,001 - 160,000
+      [TD] 
+        [P] 900
+    [TR] 
+      [TH scope=Row] 
+        [P] 160,001 - 280,000
+      [TD] 
+        [P] 1,060
+    [TR] 
+      [TH scope=Row] 
+        [P] 280,001 and over
+      [TD] 
+        [P] 1,120
+  [Table] 
+    [TR] 
+      [TH scope=Column colspan=2] 
+        [P] All Others
+    [TR] 
+      [TH scope=Column] 
+        [P] If wages from HIGHESTpaying job areÑ
+      [TH scope=Column] 
+        [P] Enter online 7 above
+    [TR] 
+      [TH scope=Row] 
+        [P] $0 - $30,000
+      [TD] 
+        [P] $480
+    [TR] 
+      [TH scope=Row] 
+        [P] 30,001 - 70,000
+      [TD] 
+        [P] 800
+    [TR] 
+      [TH scope=Row] 
+        [P] 70,001 - 140,000
+      [TD] 
+        [P] 900
+    [TR] 
+      [TH scope=Row] 
+        [P] 140,001 - 320,000
+      [TD] 
+        [P] 1,060
+    [TR] 
+      [TH scope=Row] 
+        [P] 320,001 and over
+      [TD] 
+        [P] 1,120
+  [P] Privacy Act and Paperwork Reduction Act Notice. We ask for the information on thisform to carry out the Internal Revenue laws of the United States. The Internal Revenue t…
+  [P] Code requires this information under sections 3402(f)(2)(A) and 6109 and their may become material in the administration of any Internal Revenue law. Generally, tax
+  [P] regulations. Failure to provide a properly completed form will result in your being treated returns and return information are confidential, as required by Code section 6…
+  [P] as a single person who claims no withholding allowances; providing fraudulentinformation may also subject you to penalties. Routine uses of this information includegiving…
+  [P] address. Instead, give it to your employer. You are not required to provide the information requested on a form that is subject to

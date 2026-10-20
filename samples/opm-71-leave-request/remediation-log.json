@@ -1,0 +1,46 @@
+{
+  "document": "OPM 71 - Request for Leave or Approved Absence",
+  "source": "before.pdf",
+  "changes": [
+    {
+      "fix": "Document language set to en-US; title set (Info + XMP dc:title); DisplayDocTitle true; PDF/UA-1 identifier added",
+      "wcag": "2.4.2, 3.1.1",
+      "matterhorn": "06-002, 06-003, 07-001, 11-006"
+    },
+    {
+      "fix": "Page 1: tab order follows the structure tree (/Tabs /S)",
+      "wcag": "2.4.3",
+      "matterhorn": "28-011"
+    },
+    {
+      "fix": "Page 1: 221 untagged vector graphics (rules, boxes, shading) marked as Artifact",
+      "wcag": "1.3.1",
+      "matterhorn": "01-001"
+    },
+    {
+      "fix": "Optional content configuration: added /Name and removed /AS (auto print/view switching of the AcroForm 'PrintOnly'/'ViewOnly' layers). Side effect to confirm with the client: the print-only layer no longer switches on automatically when printing.",
+      "matterhorn": "20-001/20-002",
+      "pdfua": "7.10"
+    },
+    {
+      "fix": "Layout tables re-tagged as Div (9 tables, 56 rows, 93 cells): they are the visual grid of a form, not data; screen readers no longer announce empty tables, and every field keeps its full accessible name (TU)",
+      "wcag": "1.3.1",
+      "matterhorn": "15 (tables), 09-004 (tags vs semantics)"
+    },
+    {
+      "fix": "Non-standard /Page structure element (1) re-tagged as /Part",
+      "wcag": "1.3.1, 4.1.2",
+      "matterhorn": "02-004 (non-standard type without role map)"
+    },
+    {
+      "fix": "Form title 'Request for Leave or Approved Absence' re-tagged from P to H1",
+      "wcag": "1.3.1, 2.4.6",
+      "matterhorn": "14-001/14-002"
+    }
+  ],
+  "not_changed": [
+    "Visual appearance and form field values/behaviour are untouched.",
+    "Field accessible names (TU) already present on all 71 fields and kept as is.",
+    "Reading order kept from the original tag tree: verify with NVDA (see manual checklist)."
+  ]
+}

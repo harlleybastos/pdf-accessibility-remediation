@@ -1,0 +1,1583 @@
+{
+  "tool": "pdf-a11y-validate",
+  "version": "1.0.0",
+  "generated_at": "2026-10-20T09:16:07",
+  "verapdf_version": "veraPDF 1.30.3",
+  "verapdf_flavour": "ua1",
+  "disclaimer": "A machine PASS means: veraPDF found no PDF/UA-1 machine-checkable failure and our triage found no failing check. It is NOT a conformance claim. Roughly a third of the Matterhorn Protocol failure conditions (47 of 136) need human judgment, and WCAG 2.1 AA has criteria no tool can decide. Every file still needs the manual checks listed below, with NVDA, before delivery.",
+  "summary": {
+    "files": 6,
+    "machine_pass": 3,
+    "machine_fail": 3,
+    "errors": 0,
+    "verapdf_compliant": 3,
+    "verapdf_non_compliant": 3,
+    "verapdf_failed_rules_total": 34,
+    "verapdf_failed_checks_total": 2816,
+    "triage_fails_total": 11,
+    "triage_warns_total": 5,
+    "top_verapdf_rules": [
+      {
+        "rule": "7.1-3",
+        "description": "Content shall be marked as Artifact or tagged as real content",
+        "files": 3,
+        "failed_checks": 1421
+      },
+      {
+        "rule": "7.2-34",
+        "description": "Natural language for text in page content shall be determined",
+        "files": 3,
+        "failed_checks": 1187
+      },
+      {
+        "rule": "7.18.3-1",
+        "description": "Every page on which there is an annotation shall contain in its page dictionary the key Tabs, and its value shall be S",
+        "files": 3,
+        "failed_checks": 4
+      },
+      {
+        "rule": "5-1",
+        "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+        "files": 3,
+        "failed_checks": 3
+      },
+      {
+        "rule": "7.1-10",
+        "description": "The document catalog dictionary shall include a ViewerPreferences dictionary containing a DisplayDocTitle key, whose value shall be true",
+        "files": 3,
+        "failed_checks": 3
+      },
+      {
+        "rule": "7.18.1-3",
+        "description": "A form field shall have a TU key present or all its Widget annotations shall have alternative descriptions (in the form of an Alt entry in the enclosing structure elements)",
+        "files": 2,
+        "failed_checks": 46
+      },
+      {
+        "rule": "7.18.4-1",
+        "description": "A Widget annotation shall be nested within a Form tag per ISO 32000-1:2008, 14.8.4.5, Table 340",
+        "files": 2,
+        "failed_checks": 46
+      },
+      {
+        "rule": "6.2-1",
+        "description": "The document catalog dictionary shall include a MarkInfo dictionary containing an entry, Marked, whose value shall be true",
+        "files": 2,
+        "failed_checks": 2
+      },
+      {
+        "rule": "7.1-9",
+        "description": "The Metadata stream in the document's catalog dictionary shall contain a dc:title entry, where dc is the recommended prefix for the Dublin Core metadata schema as defined in the XMP specification, which clearly identifies the document",
+        "files": 2,
+        "failed_checks": 2
+      },
+      {
+        "rule": "7.1-11",
+        "description": "The logical structure of the conforming file shall be described by a structure hierarchy rooted in the StructTreeRoot entry of the document catalog dictionary, as described in ISO 32000-1:2008, 14.7",
+        "files": 2,
+        "failed_checks": 2
+      },
+      {
+        "rule": "7.2-25",
+        "description": "Natural language in the TU key for form fields shall be determined",
+        "files": 1,
+        "failed_checks": 71
+      },
+      {
+        "rule": "7.2-23",
+        "description": "Natural language for text in E attribute shall be determined",
+        "files": 1,
+        "failed_checks": 13
+      },
+      {
+        "rule": "7.21.7-1",
+        "description": "The Font dictionary of all fonts shall define the map of all used character codes to Unicode values, either via a ToUnicode entry, or other mechanisms as defined in ISO 14289-1, 7.21.7",
+        "files": 1,
+        "failed_checks": 6
+      },
+      {
+        "rule": "7.2-42",
+        "description": "Table rows shall have the same number of columns (taking into account column spans)",
+        "files": 1,
+        "failed_checks": 3
+      },
+      {
+        "rule": "7.2-33",
+        "description": "Natural language for document metadata shall be determined",
+        "files": 1,
+        "failed_checks": 2
+      }
+    ]
+  },
+  "manual_checks_required": [
+    {
+      "id": "reading-order",
+      "check": "Reading order matches the visual/logical order",
+      "how": "NVDA: read the whole document with Down Arrow / say-all (NVDA+Down Arrow); compare with the visual layout, including multi-column text, sidebars, callouts and footnotes. Check the Tags tree order in Acrobat or PAC (Logical structure / Screen reader preview).",
+      "wcag": "1.3.2, 1.3.1",
+      "matterhorn": "09-001"
+    },
+    {
+      "id": "tag-semantics",
+      "check": "Tags match meaning (headings, lists, paragraphs, links, notes)",
+      "how": "NVDA: H / Shift+H to walk headings, NVDA+F7 elements list (headings, links), L / I for lists. Heading levels must reflect the outline and must not skip levels without reason.",
+      "wcag": "1.3.1, 2.4.6",
+      "matterhorn": "01-006, 14-xxx, 16-xxx"
+    },
+    {
+      "id": "alt-text",
+      "check": "Alternative text is accurate and equivalent; decorative images are artifacts",
+      "how": "NVDA: G / Shift+G to move between graphics; listen to every alt text. Charts/infographics need the data or the conclusion, not 'chart'. Logos, rules and backgrounds must not be announced.",
+      "wcag": "1.1.1",
+      "matterhorn": "13-004 (human), 01-005"
+    },
+    {
+      "id": "artifacts",
+      "check": "Headers, footers, page numbers and decorations are artifacts",
+      "how": "NVDA say-all must not repeat running headers/footers/page numbers in the middle of content.",
+      "wcag": "1.3.1",
+      "matterhorn": "01-001, 18-001"
+    },
+    {
+      "id": "tables",
+      "check": "Table headers and associations are correct",
+      "how": "NVDA: T to reach each table, Ctrl+Alt+arrows to move cell by cell: every data cell must announce its row/column headers. Complex tables need Scope or Headers/IDs; layout tables must not be tagged as Table.",
+      "wcag": "1.3.1",
+      "matterhorn": "15-001..15-005"
+    },
+    {
+      "id": "forms",
+      "check": "Form fields: names, roles, required state, tab order",
+      "how": "NVDA: Tab through every field; each one announces a meaningful name (TU), its type and state; the Tab order follows the visual order; instructions and errors are reachable.",
+      "wcag": "4.1.2, 3.3.2, 2.4.3, 1.3.1",
+      "matterhorn": "28-005, 28-010, 28-011"
+    },
+    {
+      "id": "links",
+      "check": "Links are tagged, work, and their purpose is clear",
+      "how": "NVDA: K / NVDA+F7 links list; every link announces meaningful text and opens the right target.",
+      "wcag": "2.4.4, 1.3.1",
+      "matterhorn": "28-011, 28-012"
+    },
+    {
+      "id": "language",
+      "check": "Document language and language changes are correct",
+      "how": "Check /Lang (Document Properties > Advanced) and that passages in another language carry their own Lang; NVDA must switch voice when automatic language switching is on.",
+      "wcag": "3.1.1, 3.1.2",
+      "matterhorn": "11-001..11-006"
+    },
+    {
+      "id": "contrast",
+      "check": "Color contrast and use of color",
+      "how": "Measure text and essential graphics with a contrast checker (4.5:1 normal text, 3:1 large text and graphical objects); information is not conveyed by color alone.",
+      "wcag": "1.4.3, 1.4.11, 1.4.1",
+      "matterhorn": "04-001 (human)"
+    },
+    {
+      "id": "bookmarks",
+      "check": "Bookmarks exist for long documents and match the headings",
+      "how": "Open the Bookmarks pane: entries follow the heading structure and jump to the right place.",
+      "wcag": "2.4.5, 2.4.1",
+      "matterhorn": "- (best practice, PDF2)"
+    },
+    {
+      "id": "title-meta",
+      "check": "Title is meaningful and shown in the window title",
+      "how": "The window title shows the document title (not the file name); title describes the content.",
+      "wcag": "2.4.2",
+      "matterhorn": "06-003, 07-001"
+    },
+    {
+      "id": "text-mapping",
+      "check": "Text is read correctly (no garbled characters, ligatures or merged words)",
+      "how": "NVDA say-all and character navigation on special characters, ligatures, symbols and math; copy-paste a sample paragraph into a plain-text editor.",
+      "wcag": "1.3.1, 4.1.2",
+      "matterhorn": "10-001, 31-xxx"
+    },
+    {
+      "id": "ocr",
+      "check": "OCR text is accurate (scanned pages)",
+      "how": "Compare recognized text against the page image; fix misrecognised words, numbers and dates.",
+      "wcag": "1.1.1, 1.4.5",
+      "matterhorn": "08-001, 08-002"
+    },
+    {
+      "id": "visual-fidelity",
+      "check": "The remediated file looks like the original",
+      "how": "Compare page by page with the source: no lost content, moved objects or changed fonts.",
+      "wcag": "-",
+      "matterhorn": "-"
+    },
+    {
+      "id": "sr-smoke",
+      "check": "End-to-end screen reader pass",
+      "how": "NVDA (latest) with Adobe Acrobat Reader: read start to finish, navigate by headings, tables, lists, links and form fields. Optionally repeat with JAWS. Note any confusion as a defect.",
+      "wcag": "Overall WCAG 2.1 AA",
+      "matterhorn": "All human checkpoints"
+    }
+  ],
+  "files": [
+    {
+      "path": "samples\\federal-register-2010-13068\\after.pdf",
+      "machine_verdict": "pass",
+      "reasons": [],
+      "manual_checks_status": "REQUIRED - not performed by this tool",
+      "verapdf": {
+        "name": "C:\\Users\\Harlley Bastos\\Projects\\pdf-accessibility-remediation\\samples\\federal-register-2010-13068\\after.pdf",
+        "status": "compliant",
+        "profile": "PDF/UA-1 validation profile",
+        "passed_rules": 106,
+        "failed_rules": 0,
+        "passed_checks": 13522,
+        "failed_checks": 0,
+        "rules": [],
+        "error": "",
+        "statement": "PDF file is compliant with Validation Profile requirements."
+      },
+      "triage": {
+        "path": "samples\\federal-register-2010-13068\\after.pdf",
+        "size_bytes": 158186,
+        "error": null,
+        "pages": 2,
+        "pdf_version": "1.7",
+        "producer": "iText® Core 7.2.3 (production version) ©2000-2022 iText Group NV, Government Publishing Office",
+        "tagged": true,
+        "lang": "en-US",
+        "title": "Federal Register Vol. 75, No. 104 (June 1, 2010), pages 30370-30371: Department of Commerce notices",
+        "no_text_pages": 0,
+        "scanned_pages": 0,
+        "blank_pages": 0,
+        "figures": 0,
+        "figures_missing_alt": 0,
+        "tables": 2,
+        "tables_without_th": 0,
+        "headings": 12,
+        "form_fields": 1,
+        "form_fields_missing_tu": 0,
+        "annot_pages_missing_tabs": 0,
+        "encrypted": false,
+        "pdfua_part": "1",
+        "has_outlines": false,
+        "fonts_checked": 7,
+        "fonts_missing_tounicode": 1,
+        "doc_date": "2024-06-04",
+        "complexity": "complex",
+        "needs_remediation": false,
+        "est_cost_usd": 7.5,
+        "est_hours": 0.42,
+        "title2_hints": [
+          "Fillable form: likely in active use to access a service - not exempt; prioritize.",
+          "Possibly pre-existing (last dated 2024-06-04, before 2026-04-26): check the archived/pre-existing document exceptions; forms and documents still used to apply for, access or participate in services are not exempt."
+        ],
+        "checks": [
+          {
+            "id": "tagged",
+            "status": "pass",
+            "reason": "MarkInfo /Marked true and StructTreeRoot present.",
+            "name": "Tagged PDF",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "01 Real content tagged; 06 Metadata (MarkInfo)"
+          },
+          {
+            "id": "language",
+            "status": "pass",
+            "reason": "Catalog /Lang = 'en-US'.",
+            "name": "Document language",
+            "wcag": "3.1.1",
+            "matterhorn": "11-006 Natural language (document)"
+          },
+          {
+            "id": "title",
+            "status": "pass",
+            "reason": "Title set and DisplayDocTitle true.",
+            "name": "Document title",
+            "wcag": "2.4.2",
+            "matterhorn": "06-003 dc:title; 07-001/07-002 DisplayDocTitle"
+          },
+          {
+            "id": "scanned",
+            "status": "pass",
+            "reason": "Every page has extractable text.",
+            "name": "Extractable text / OCR",
+            "wcag": "1.1.1, 1.4.5",
+            "matterhorn": "08 OCR"
+          },
+          {
+            "id": "figures",
+            "status": "info",
+            "reason": "No Figure elements tagged.",
+            "name": "Figure alternative text",
+            "wcag": "1.1.1",
+            "matterhorn": "13-004 Figure alt text"
+          },
+          {
+            "id": "tables",
+            "status": "pass",
+            "reason": "All 2 Table(s) contain TH cells (scope/structure needs manual review).",
+            "name": "Table headers",
+            "wcag": "1.3.1",
+            "matterhorn": "15 Tables"
+          },
+          {
+            "id": "headings",
+            "status": "pass",
+            "reason": "12 heading element(s) found.",
+            "name": "Headings",
+            "wcag": "1.3.1, 2.4.6",
+            "matterhorn": "14 Headings"
+          },
+          {
+            "id": "forms",
+            "status": "pass",
+            "reason": "1 field(s), all with /TU; tab order set.",
+            "name": "Form fields & tab order",
+            "wcag": "4.1.2, 3.3.2, 2.4.3",
+            "matterhorn": "28 Annotations (TU, Tabs /S)"
+          },
+          {
+            "id": "security",
+            "status": "pass",
+            "reason": "Not encrypted.",
+            "name": "Security vs. assistive tech",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "26 Security"
+          },
+          {
+            "id": "pdfua",
+            "status": "info",
+            "reason": "Claims PDF/UA-1 in XMP (claim only, not verified).",
+            "name": "PDF/UA identifier",
+            "wcag": "-",
+            "matterhorn": "06-002 PDF/UA identifier"
+          },
+          {
+            "id": "bookmarks",
+            "status": "info",
+            "reason": "No bookmarks (not expected for <= 20 pages).",
+            "name": "Bookmarks (long docs)",
+            "wcag": "2.4.5",
+            "matterhorn": "- (best practice, PDF2)"
+          },
+          {
+            "id": "fonts",
+            "status": "warn",
+            "reason": "1 of 7 font(s) lack ToUnicode where needed; text may read as garbage.",
+            "name": "Font Unicode mapping",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "31 Fonts / 10 Character mappings"
+          }
+        ],
+        "fails": 0,
+        "warns": 1
+      }
+    },
+    {
+      "path": "samples\\federal-register-2010-13068\\before.pdf",
+      "machine_verdict": "fail",
+      "reasons": [
+        "veraPDF PDF/UA-1: 10 rule(s) failed (1004 check(s)).",
+        "Triage fail: Tagged PDF - Untagged: no structure tree. Requires full tagging.",
+        "Triage fail: Document language - Catalog /Lang missing; screen readers may use the wrong voice.",
+        "Triage fail: Document title - No document title in Info or XMP dc:title.",
+        "Triage fail: Form fields & tab order - 1 of 1 field(s) missing /TU (accessible name); 1 page(s) with annotations lack /Tabs /S."
+      ],
+      "manual_checks_status": "REQUIRED - not performed by this tool",
+      "verapdf": {
+        "name": "C:\\Users\\Harlley Bastos\\Projects\\pdf-accessibility-remediation\\samples\\federal-register-2010-13068\\before.pdf",
+        "status": "non-compliant",
+        "profile": "PDF/UA-1 validation profile",
+        "passed_rules": 96,
+        "failed_rules": 10,
+        "passed_checks": 1508,
+        "failed_checks": 1004,
+        "rules": [
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.1",
+            "test_number": 3,
+            "description": "Content shall be marked as Artifact or tagged as real content",
+            "failed_checks": 512,
+            "tags": [
+              "artifact"
+            ],
+            "sample_error": "Content is neither marked as Artifact nor tagged as real content",
+            "rule_id": "7.1-3"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.2",
+            "test_number": 34,
+            "description": "Natural language for text in page content shall be determined",
+            "failed_checks": 484,
+            "tags": [
+              "text",
+              "lang"
+            ],
+            "sample_error": "Natural language for text in page content cannot be determined",
+            "rule_id": "7.2-34"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "5",
+            "test_number": 1,
+            "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+            "failed_checks": 1,
+            "tags": [
+              "metadata"
+            ],
+            "sample_error": "The document metadata stream doesn't contain PDF/UA Identification Schema",
+            "rule_id": "5-1"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "6.2",
+            "test_number": 1,
+            "description": "The document catalog dictionary shall include a MarkInfo dictionary containing an entry, Marked, whose value shall be true",
+            "failed_checks": 1,
+            "tags": [
+              "syntax"
+            ],
+            "sample_error": "MarkInfo dictionary is not present in the document catalog, or Marked entry is set to false or is not present in the MarkInfo dictionary (MarkInfo = null, Marked = null)",
+            "rule_id": "6.2-1"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.1",
+            "test_number": 9,
+            "description": "The Metadata stream in the document's catalog dictionary shall contain a dc:title entry, where dc is the recommended prefix for the Dublin Core metadata schema as defined in the XMP specification, which clearly identifies the document",
+            "failed_checks": 1,
+            "tags": [
+              "metadata"
+            ],
+            "sample_error": "Metadata stream does not contain dc:title",
+            "rule_id": "7.1-9"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.1",
+            "test_number": 10,
+            "description": "The document catalog dictionary shall include a ViewerPreferences dictionary containing a DisplayDocTitle key, whose value shall be true",
+            "failed_checks": 1,
+            "tags": [
+              "syntax"
+            ],
+            "sample_error": "ViewerPreferences dictionary is not present in the document Catalog, or DisplayDocTitle key is set to false or is not present in the ViewerPreferences dictionary (ViewerPreferences = null, DisplayDocTitle = null)",
+            "rule_id": "7.1-10"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.1",
+            "test_number": 11,
+            "description": "The logical structure of the conforming file shall be described by a structure hierarchy rooted in the StructTreeRoot entry of the document catalog dictionary, as described in ISO 32000-1:2008, 14.7",
+            "failed_checks": 1,
+            "tags": [
+              "structure"
+            ],
+            "sample_error": "StructTreeRoot entry is not present in the document catalog",
+            "rule_id": "7.1-11"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.18.1",
+            "test_number": 3,
+            "description": "A form field shall have a TU key present or all its Widget annotations shall have alternative descriptions (in the form of an Alt entry in the enclosing structure elements)",
+            "failed_checks": 1,
+            "tags": [
+              "annotation",
+              "alt-text"
+            ],
+            "sample_error": "A form field neither has TU key nor its Widget annotations have alternative descriptions (in the form of an Alt entry in the enclosing structure element)",
+            "rule_id": "7.18.1-3"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.18.3",
+            "test_number": 1,
+            "description": "Every page on which there is an annotation shall contain in its page dictionary the key Tabs, and its value shall be S",
+            "failed_checks": 1,
+            "tags": [
+              "page"
+            ],
+            "sample_error": "A page with annotation(s) contains Tabs key with value null instead of S",
+            "rule_id": "7.18.3-1"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.18.4",
+            "test_number": 1,
+            "description": "A Widget annotation shall be nested within a Form tag per ISO 32000-1:2008, 14.8.4.5, Table 340",
+            "failed_checks": 1,
+            "tags": [
+              "annotation"
+            ],
+            "sample_error": "A Widget annotation is an Artifact or is nested within null tag (standard type = null) instead of Form",
+            "rule_id": "7.18.4-1"
+          }
+        ],
+        "error": "",
+        "statement": "PDF file is not compliant with Validation Profile requirements."
+      },
+      "triage": {
+        "path": "samples\\federal-register-2010-13068\\before.pdf",
+        "size_bytes": 146158,
+        "error": null,
+        "pages": 2,
+        "pdf_version": "1.7",
+        "producer": "iText® Core 7.2.3 (production version) ©2000-2022 iText Group NV, Government Publishing Office",
+        "tagged": false,
+        "lang": "",
+        "title": "",
+        "no_text_pages": 0,
+        "scanned_pages": 0,
+        "blank_pages": 0,
+        "figures": 0,
+        "figures_missing_alt": 0,
+        "tables": 0,
+        "tables_without_th": 0,
+        "headings": 0,
+        "form_fields": 1,
+        "form_fields_missing_tu": 1,
+        "annot_pages_missing_tabs": 1,
+        "encrypted": false,
+        "pdfua_part": "",
+        "has_outlines": false,
+        "fonts_checked": 7,
+        "fonts_missing_tounicode": 1,
+        "doc_date": "2024-06-04",
+        "complexity": "complex",
+        "needs_remediation": true,
+        "est_cost_usd": 30.0,
+        "est_hours": 0.92,
+        "title2_hints": [
+          "Fillable form: likely in active use to access a service - not exempt; prioritize.",
+          "Possibly pre-existing (last dated 2024-06-04, before 2026-04-26): check the archived/pre-existing document exceptions; forms and documents still used to apply for, access or participate in services are not exempt."
+        ],
+        "checks": [
+          {
+            "id": "tagged",
+            "status": "fail",
+            "reason": "Untagged: no structure tree. Requires full tagging.",
+            "name": "Tagged PDF",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "01 Real content tagged; 06 Metadata (MarkInfo)"
+          },
+          {
+            "id": "language",
+            "status": "fail",
+            "reason": "Catalog /Lang missing; screen readers may use the wrong voice.",
+            "name": "Document language",
+            "wcag": "3.1.1",
+            "matterhorn": "11-006 Natural language (document)"
+          },
+          {
+            "id": "title",
+            "status": "fail",
+            "reason": "No document title in Info or XMP dc:title.",
+            "name": "Document title",
+            "wcag": "2.4.2",
+            "matterhorn": "06-003 dc:title; 07-001/07-002 DisplayDocTitle"
+          },
+          {
+            "id": "scanned",
+            "status": "pass",
+            "reason": "Every page has extractable text.",
+            "name": "Extractable text / OCR",
+            "wcag": "1.1.1, 1.4.5",
+            "matterhorn": "08 OCR"
+          },
+          {
+            "id": "figures",
+            "status": "n/a",
+            "reason": "Not tagged: cannot evaluate (will be addressed during tagging).",
+            "name": "Figure alternative text",
+            "wcag": "1.1.1",
+            "matterhorn": "13-004 Figure alt text"
+          },
+          {
+            "id": "tables",
+            "status": "n/a",
+            "reason": "Not tagged: cannot evaluate (will be addressed during tagging).",
+            "name": "Table headers",
+            "wcag": "1.3.1",
+            "matterhorn": "15 Tables"
+          },
+          {
+            "id": "headings",
+            "status": "n/a",
+            "reason": "Not tagged: cannot evaluate (will be addressed during tagging).",
+            "name": "Headings",
+            "wcag": "1.3.1, 2.4.6",
+            "matterhorn": "14 Headings"
+          },
+          {
+            "id": "forms",
+            "status": "fail",
+            "reason": "1 of 1 field(s) missing /TU (accessible name); 1 page(s) with annotations lack /Tabs /S.",
+            "name": "Form fields & tab order",
+            "wcag": "4.1.2, 3.3.2, 2.4.3",
+            "matterhorn": "28 Annotations (TU, Tabs /S)"
+          },
+          {
+            "id": "security",
+            "status": "pass",
+            "reason": "Not encrypted.",
+            "name": "Security vs. assistive tech",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "26 Security"
+          },
+          {
+            "id": "pdfua",
+            "status": "info",
+            "reason": "No PDF/UA identifier in XMP (informational; not required by WCAG).",
+            "name": "PDF/UA identifier",
+            "wcag": "-",
+            "matterhorn": "06-002 PDF/UA identifier"
+          },
+          {
+            "id": "bookmarks",
+            "status": "info",
+            "reason": "No bookmarks (not expected for <= 20 pages).",
+            "name": "Bookmarks (long docs)",
+            "wcag": "2.4.5",
+            "matterhorn": "- (best practice, PDF2)"
+          },
+          {
+            "id": "fonts",
+            "status": "warn",
+            "reason": "1 of 7 font(s) lack ToUnicode where needed; text may read as garbage.",
+            "name": "Font Unicode mapping",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "31 Fonts / 10 Character mappings"
+          }
+        ],
+        "fails": 4,
+        "warns": 1
+      }
+    },
+    {
+      "path": "samples\\irs-w4-2005\\after.pdf",
+      "machine_verdict": "pass",
+      "reasons": [],
+      "manual_checks_status": "REQUIRED - not performed by this tool",
+      "verapdf": {
+        "name": "C:\\Users\\Harlley Bastos\\Projects\\pdf-accessibility-remediation\\samples\\irs-w4-2005\\after.pdf",
+        "status": "compliant",
+        "profile": "PDF/UA-1 validation profile",
+        "passed_rules": 106,
+        "failed_rules": 0,
+        "passed_checks": 27217,
+        "failed_checks": 0,
+        "rules": [],
+        "error": "",
+        "statement": "PDF file is compliant with Validation Profile requirements."
+      },
+      "triage": {
+        "path": "samples\\irs-w4-2005\\after.pdf",
+        "size_bytes": 141792,
+        "error": null,
+        "pages": 2,
+        "pdf_version": "1.6",
+        "producer": "Acrobat Distiller 6.0.1 (Windows)",
+        "tagged": true,
+        "lang": "en-US",
+        "title": "Form W-4 (2005): Employee's Withholding Allowance Certificate",
+        "no_text_pages": 0,
+        "scanned_pages": 0,
+        "blank_pages": 0,
+        "figures": 0,
+        "figures_missing_alt": 0,
+        "tables": 4,
+        "tables_without_th": 0,
+        "headings": 6,
+        "form_fields": 43,
+        "form_fields_missing_tu": 0,
+        "annot_pages_missing_tabs": 0,
+        "encrypted": false,
+        "pdfua_part": "1",
+        "has_outlines": false,
+        "fonts_checked": 11,
+        "fonts_missing_tounicode": 1,
+        "doc_date": "2008-12-07",
+        "complexity": "complex",
+        "needs_remediation": false,
+        "est_cost_usd": 7.5,
+        "est_hours": 0.42,
+        "title2_hints": [
+          "Fillable form: likely in active use to access a service - not exempt; prioritize.",
+          "Possibly pre-existing (last dated 2008-12-07, before 2026-04-26): check the archived/pre-existing document exceptions; forms and documents still used to apply for, access or participate in services are not exempt."
+        ],
+        "checks": [
+          {
+            "id": "tagged",
+            "status": "pass",
+            "reason": "MarkInfo /Marked true and StructTreeRoot present.",
+            "name": "Tagged PDF",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "01 Real content tagged; 06 Metadata (MarkInfo)"
+          },
+          {
+            "id": "language",
+            "status": "pass",
+            "reason": "Catalog /Lang = 'en-US'.",
+            "name": "Document language",
+            "wcag": "3.1.1",
+            "matterhorn": "11-006 Natural language (document)"
+          },
+          {
+            "id": "title",
+            "status": "pass",
+            "reason": "Title set and DisplayDocTitle true.",
+            "name": "Document title",
+            "wcag": "2.4.2",
+            "matterhorn": "06-003 dc:title; 07-001/07-002 DisplayDocTitle"
+          },
+          {
+            "id": "scanned",
+            "status": "pass",
+            "reason": "Every page has extractable text.",
+            "name": "Extractable text / OCR",
+            "wcag": "1.1.1, 1.4.5",
+            "matterhorn": "08 OCR"
+          },
+          {
+            "id": "figures",
+            "status": "info",
+            "reason": "No Figure elements tagged.",
+            "name": "Figure alternative text",
+            "wcag": "1.1.1",
+            "matterhorn": "13-004 Figure alt text"
+          },
+          {
+            "id": "tables",
+            "status": "pass",
+            "reason": "All 4 Table(s) contain TH cells (scope/structure needs manual review).",
+            "name": "Table headers",
+            "wcag": "1.3.1",
+            "matterhorn": "15 Tables"
+          },
+          {
+            "id": "headings",
+            "status": "pass",
+            "reason": "6 heading element(s) found.",
+            "name": "Headings",
+            "wcag": "1.3.1, 2.4.6",
+            "matterhorn": "14 Headings"
+          },
+          {
+            "id": "forms",
+            "status": "pass",
+            "reason": "43 field(s), all with /TU; tab order set.",
+            "name": "Form fields & tab order",
+            "wcag": "4.1.2, 3.3.2, 2.4.3",
+            "matterhorn": "28 Annotations (TU, Tabs /S)"
+          },
+          {
+            "id": "security",
+            "status": "pass",
+            "reason": "Not encrypted.",
+            "name": "Security vs. assistive tech",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "26 Security"
+          },
+          {
+            "id": "pdfua",
+            "status": "info",
+            "reason": "Claims PDF/UA-1 in XMP (claim only, not verified).",
+            "name": "PDF/UA identifier",
+            "wcag": "-",
+            "matterhorn": "06-002 PDF/UA identifier"
+          },
+          {
+            "id": "bookmarks",
+            "status": "info",
+            "reason": "No bookmarks (not expected for <= 20 pages).",
+            "name": "Bookmarks (long docs)",
+            "wcag": "2.4.5",
+            "matterhorn": "- (best practice, PDF2)"
+          },
+          {
+            "id": "fonts",
+            "status": "warn",
+            "reason": "1 of 11 font(s) lack ToUnicode where needed; text may read as garbage.",
+            "name": "Font Unicode mapping",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "31 Fonts / 10 Character mappings"
+          }
+        ],
+        "fails": 0,
+        "warns": 1
+      }
+    },
+    {
+      "path": "samples\\irs-w4-2005\\before.pdf",
+      "machine_verdict": "fail",
+      "reasons": [
+        "veraPDF PDF/UA-1: 12 rule(s) failed (1375 check(s)).",
+        "Triage fail: Tagged PDF - Untagged: no structure tree. Requires full tagging.",
+        "Triage fail: Document language - Catalog /Lang missing; screen readers may use the wrong voice.",
+        "Triage fail: Document title - Title set but /ViewerPreferences /DisplayDocTitle is not true (file name is shown).",
+        "Triage fail: Form fields & tab order - 43 of 43 field(s) missing /TU (accessible name); 2 page(s) with annotations lack /Tabs /S."
+      ],
+      "manual_checks_status": "REQUIRED - not performed by this tool",
+      "verapdf": {
+        "name": "C:\\Users\\Harlley Bastos\\Projects\\pdf-accessibility-remediation\\samples\\irs-w4-2005\\before.pdf",
+        "status": "non-compliant",
+        "profile": "PDF/UA-1 validation profile",
+        "passed_rules": 94,
+        "failed_rules": 12,
+        "passed_checks": 2086,
+        "failed_checks": 1375,
+        "rules": [
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.1",
+            "test_number": 3,
+            "description": "Content shall be marked as Artifact or tagged as real content",
+            "failed_checks": 688,
+            "tags": [
+              "artifact"
+            ],
+            "sample_error": "Content is neither marked as Artifact nor tagged as real content",
+            "rule_id": "7.1-3"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.2",
+            "test_number": 34,
+            "description": "Natural language for text in page content shall be determined",
+            "failed_checks": 582,
+            "tags": [
+              "text",
+              "lang"
+            ],
+            "sample_error": "Natural language for text in page content cannot be determined",
+            "rule_id": "7.2-34"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.18.1",
+            "test_number": 3,
+            "description": "A form field shall have a TU key present or all its Widget annotations shall have alternative descriptions (in the form of an Alt entry in the enclosing structure elements)",
+            "failed_checks": 45,
+            "tags": [
+              "annotation",
+              "alt-text"
+            ],
+            "sample_error": "A form field neither has TU key nor its Widget annotations have alternative descriptions (in the form of an Alt entry in the enclosing structure element)",
+            "rule_id": "7.18.1-3"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.18.4",
+            "test_number": 1,
+            "description": "A Widget annotation shall be nested within a Form tag per ISO 32000-1:2008, 14.8.4.5, Table 340",
+            "failed_checks": 45,
+            "tags": [
+              "annotation"
+            ],
+            "sample_error": "A Widget annotation is an Artifact or is nested within null tag (standard type = null) instead of Form",
+            "rule_id": "7.18.4-1"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.21.7",
+            "test_number": 1,
+            "description": "The Font dictionary of all fonts shall define the map of all used character codes to Unicode values, either via a ToUnicode entry, or other mechanisms as defined in ISO 14289-1, 7.21.7",
+            "failed_checks": 6,
+            "tags": [
+              "font"
+            ],
+            "sample_error": "The glyph can not be mapped to Unicode",
+            "rule_id": "7.21.7-1"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.18.3",
+            "test_number": 1,
+            "description": "Every page on which there is an annotation shall contain in its page dictionary the key Tabs, and its value shall be S",
+            "failed_checks": 2,
+            "tags": [
+              "page"
+            ],
+            "sample_error": "A page with annotation(s) contains Tabs key with value null instead of S",
+            "rule_id": "7.18.3-1"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.2",
+            "test_number": 33,
+            "description": "Natural language for document metadata shall be determined",
+            "failed_checks": 2,
+            "tags": [
+              "metadata",
+              "lang"
+            ],
+            "sample_error": "Natural language for document metadata cannot be determined",
+            "rule_id": "7.2-33"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "5",
+            "test_number": 1,
+            "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+            "failed_checks": 1,
+            "tags": [
+              "metadata"
+            ],
+            "sample_error": "The document metadata stream doesn't contain PDF/UA Identification Schema",
+            "rule_id": "5-1"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "6.2",
+            "test_number": 1,
+            "description": "The document catalog dictionary shall include a MarkInfo dictionary containing an entry, Marked, whose value shall be true",
+            "failed_checks": 1,
+            "tags": [
+              "syntax"
+            ],
+            "sample_error": "MarkInfo dictionary is not present in the document catalog, or Marked entry is set to false or is not present in the MarkInfo dictionary (MarkInfo = null, Marked = null)",
+            "rule_id": "6.2-1"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.1",
+            "test_number": 10,
+            "description": "The document catalog dictionary shall include a ViewerPreferences dictionary containing a DisplayDocTitle key, whose value shall be true",
+            "failed_checks": 1,
+            "tags": [
+              "syntax"
+            ],
+            "sample_error": "ViewerPreferences dictionary is not present in the document Catalog, or DisplayDocTitle key is set to false or is not present in the ViewerPreferences dictionary (ViewerPreferences = dictionary(size = 0), DisplayDocTitle = null)",
+            "rule_id": "7.1-10"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.1",
+            "test_number": 11,
+            "description": "The logical structure of the conforming file shall be described by a structure hierarchy rooted in the StructTreeRoot entry of the document catalog dictionary, as described in ISO 32000-1:2008, 14.7",
+            "failed_checks": 1,
+            "tags": [
+              "structure"
+            ],
+            "sample_error": "StructTreeRoot entry is not present in the document catalog",
+            "rule_id": "7.1-11"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.21.4.1",
+            "test_number": 1,
+            "description": "The font programs for all fonts used for rendering within a conforming file shall be embedded within that file, as defined in ISO 32000-1:2008, 9.9",
+            "failed_checks": 1,
+            "tags": [
+              "font"
+            ],
+            "sample_error": "The font program is not embedded",
+            "rule_id": "7.21.4.1-1"
+          }
+        ],
+        "error": "",
+        "statement": "PDF file is not compliant with Validation Profile requirements."
+      },
+      "triage": {
+        "path": "samples\\irs-w4-2005\\before.pdf",
+        "size_bytes": 92386,
+        "error": null,
+        "pages": 2,
+        "pdf_version": "1.6",
+        "producer": "Acrobat Distiller 6.0.1 (Windows)",
+        "tagged": false,
+        "lang": "",
+        "title": "2005 Form W-4",
+        "no_text_pages": 0,
+        "scanned_pages": 0,
+        "blank_pages": 0,
+        "figures": 0,
+        "figures_missing_alt": 0,
+        "tables": 0,
+        "tables_without_th": 0,
+        "headings": 0,
+        "form_fields": 43,
+        "form_fields_missing_tu": 43,
+        "annot_pages_missing_tabs": 2,
+        "encrypted": false,
+        "pdfua_part": "",
+        "has_outlines": false,
+        "fonts_checked": 11,
+        "fonts_missing_tounicode": 3,
+        "doc_date": "2008-12-07",
+        "complexity": "complex",
+        "needs_remediation": true,
+        "est_cost_usd": 30.0,
+        "est_hours": 0.92,
+        "title2_hints": [
+          "Fillable form: likely in active use to access a service - not exempt; prioritize.",
+          "Possibly pre-existing (last dated 2008-12-07, before 2026-04-26): check the archived/pre-existing document exceptions; forms and documents still used to apply for, access or participate in services are not exempt."
+        ],
+        "checks": [
+          {
+            "id": "tagged",
+            "status": "fail",
+            "reason": "Untagged: no structure tree. Requires full tagging.",
+            "name": "Tagged PDF",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "01 Real content tagged; 06 Metadata (MarkInfo)"
+          },
+          {
+            "id": "language",
+            "status": "fail",
+            "reason": "Catalog /Lang missing; screen readers may use the wrong voice.",
+            "name": "Document language",
+            "wcag": "3.1.1",
+            "matterhorn": "11-006 Natural language (document)"
+          },
+          {
+            "id": "title",
+            "status": "fail",
+            "reason": "Title set but /ViewerPreferences /DisplayDocTitle is not true (file name is shown).",
+            "name": "Document title",
+            "wcag": "2.4.2",
+            "matterhorn": "06-003 dc:title; 07-001/07-002 DisplayDocTitle"
+          },
+          {
+            "id": "scanned",
+            "status": "pass",
+            "reason": "Every page has extractable text.",
+            "name": "Extractable text / OCR",
+            "wcag": "1.1.1, 1.4.5",
+            "matterhorn": "08 OCR"
+          },
+          {
+            "id": "figures",
+            "status": "n/a",
+            "reason": "Not tagged: cannot evaluate (will be addressed during tagging).",
+            "name": "Figure alternative text",
+            "wcag": "1.1.1",
+            "matterhorn": "13-004 Figure alt text"
+          },
+          {
+            "id": "tables",
+            "status": "n/a",
+            "reason": "Not tagged: cannot evaluate (will be addressed during tagging).",
+            "name": "Table headers",
+            "wcag": "1.3.1",
+            "matterhorn": "15 Tables"
+          },
+          {
+            "id": "headings",
+            "status": "n/a",
+            "reason": "Not tagged: cannot evaluate (will be addressed during tagging).",
+            "name": "Headings",
+            "wcag": "1.3.1, 2.4.6",
+            "matterhorn": "14 Headings"
+          },
+          {
+            "id": "forms",
+            "status": "fail",
+            "reason": "43 of 43 field(s) missing /TU (accessible name); 2 page(s) with annotations lack /Tabs /S.",
+            "name": "Form fields & tab order",
+            "wcag": "4.1.2, 3.3.2, 2.4.3",
+            "matterhorn": "28 Annotations (TU, Tabs /S)"
+          },
+          {
+            "id": "security",
+            "status": "pass",
+            "reason": "Not encrypted.",
+            "name": "Security vs. assistive tech",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "26 Security"
+          },
+          {
+            "id": "pdfua",
+            "status": "info",
+            "reason": "No PDF/UA identifier in XMP (informational; not required by WCAG).",
+            "name": "PDF/UA identifier",
+            "wcag": "-",
+            "matterhorn": "06-002 PDF/UA identifier"
+          },
+          {
+            "id": "bookmarks",
+            "status": "info",
+            "reason": "No bookmarks (not expected for <= 20 pages).",
+            "name": "Bookmarks (long docs)",
+            "wcag": "2.4.5",
+            "matterhorn": "- (best practice, PDF2)"
+          },
+          {
+            "id": "fonts",
+            "status": "warn",
+            "reason": "3 of 11 font(s) lack ToUnicode where needed; text may read as garbage.",
+            "name": "Font Unicode mapping",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "31 Fonts / 10 Character mappings"
+          }
+        ],
+        "fails": 4,
+        "warns": 1
+      }
+    },
+    {
+      "path": "samples\\opm-71-leave-request\\after.pdf",
+      "machine_verdict": "pass",
+      "reasons": [],
+      "manual_checks_status": "REQUIRED - not performed by this tool",
+      "verapdf": {
+        "name": "C:\\Users\\Harlley Bastos\\Projects\\pdf-accessibility-remediation\\samples\\opm-71-leave-request\\after.pdf",
+        "status": "compliant",
+        "profile": "PDF/UA-1 validation profile",
+        "passed_rules": 106,
+        "failed_rules": 0,
+        "passed_checks": 9296,
+        "failed_checks": 0,
+        "rules": [],
+        "error": "",
+        "statement": "PDF file is compliant with Validation Profile requirements."
+      },
+      "triage": {
+        "path": "samples\\opm-71-leave-request\\after.pdf",
+        "size_bytes": 731176,
+        "error": null,
+        "pages": 1,
+        "pdf_version": "1.6",
+        "producer": "Adobe LiveCycle Designer ES 8.2",
+        "tagged": true,
+        "lang": "en-US",
+        "title": "OPM 71 - Request for Leave or Approved Absence",
+        "no_text_pages": 0,
+        "scanned_pages": 0,
+        "blank_pages": 0,
+        "figures": 0,
+        "figures_missing_alt": 0,
+        "tables": 0,
+        "tables_without_th": 0,
+        "headings": 1,
+        "form_fields": 71,
+        "form_fields_missing_tu": 0,
+        "annot_pages_missing_tabs": 0,
+        "encrypted": false,
+        "pdfua_part": "1",
+        "has_outlines": false,
+        "fonts_checked": 3,
+        "fonts_missing_tounicode": 0,
+        "doc_date": "2013-06-04",
+        "complexity": "complex",
+        "needs_remediation": false,
+        "est_cost_usd": 3.75,
+        "est_hours": 0.33,
+        "title2_hints": [
+          "Fillable form: likely in active use to access a service - not exempt; prioritize.",
+          "Possibly pre-existing (last dated 2013-06-04, before 2026-04-26): check the archived/pre-existing document exceptions; forms and documents still used to apply for, access or participate in services are not exempt."
+        ],
+        "checks": [
+          {
+            "id": "tagged",
+            "status": "pass",
+            "reason": "MarkInfo /Marked true and StructTreeRoot present.",
+            "name": "Tagged PDF",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "01 Real content tagged; 06 Metadata (MarkInfo)"
+          },
+          {
+            "id": "language",
+            "status": "pass",
+            "reason": "Catalog /Lang = 'en-US'.",
+            "name": "Document language",
+            "wcag": "3.1.1",
+            "matterhorn": "11-006 Natural language (document)"
+          },
+          {
+            "id": "title",
+            "status": "pass",
+            "reason": "Title set and DisplayDocTitle true.",
+            "name": "Document title",
+            "wcag": "2.4.2",
+            "matterhorn": "06-003 dc:title; 07-001/07-002 DisplayDocTitle"
+          },
+          {
+            "id": "scanned",
+            "status": "pass",
+            "reason": "Every page has extractable text.",
+            "name": "Extractable text / OCR",
+            "wcag": "1.1.1, 1.4.5",
+            "matterhorn": "08 OCR"
+          },
+          {
+            "id": "figures",
+            "status": "info",
+            "reason": "No Figure elements tagged.",
+            "name": "Figure alternative text",
+            "wcag": "1.1.1",
+            "matterhorn": "13-004 Figure alt text"
+          },
+          {
+            "id": "tables",
+            "status": "info",
+            "reason": "No Table elements tagged.",
+            "name": "Table headers",
+            "wcag": "1.3.1",
+            "matterhorn": "15 Tables"
+          },
+          {
+            "id": "headings",
+            "status": "pass",
+            "reason": "1 heading element(s) found.",
+            "name": "Headings",
+            "wcag": "1.3.1, 2.4.6",
+            "matterhorn": "14 Headings"
+          },
+          {
+            "id": "forms",
+            "status": "pass",
+            "reason": "71 field(s), all with /TU; tab order set.",
+            "name": "Form fields & tab order",
+            "wcag": "4.1.2, 3.3.2, 2.4.3",
+            "matterhorn": "28 Annotations (TU, Tabs /S)"
+          },
+          {
+            "id": "security",
+            "status": "pass",
+            "reason": "Not encrypted.",
+            "name": "Security vs. assistive tech",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "26 Security"
+          },
+          {
+            "id": "pdfua",
+            "status": "info",
+            "reason": "Claims PDF/UA-1 in XMP (claim only, not verified).",
+            "name": "PDF/UA identifier",
+            "wcag": "-",
+            "matterhorn": "06-002 PDF/UA identifier"
+          },
+          {
+            "id": "bookmarks",
+            "status": "info",
+            "reason": "No bookmarks (not expected for <= 20 pages).",
+            "name": "Bookmarks (long docs)",
+            "wcag": "2.4.5",
+            "matterhorn": "- (best practice, PDF2)"
+          },
+          {
+            "id": "fonts",
+            "status": "pass",
+            "reason": "3 font(s) checked; mappings look usable.",
+            "name": "Font Unicode mapping",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "31 Fonts / 10 Character mappings"
+          }
+        ],
+        "fails": 0,
+        "warns": 0
+      }
+    },
+    {
+      "path": "samples\\opm-71-leave-request\\before.pdf",
+      "machine_verdict": "fail",
+      "reasons": [
+        "veraPDF PDF/UA-1: 12 rule(s) failed (437 check(s)).",
+        "Triage fail: Document language - Catalog /Lang missing; screen readers may use the wrong voice.",
+        "Triage fail: Document title - No document title in Info or XMP dc:title.",
+        "Triage fail: Table headers - 9 of 9 Table(s) have no TH header cells."
+      ],
+      "manual_checks_status": "REQUIRED - not performed by this tool",
+      "verapdf": {
+        "name": "C:\\Users\\Harlley Bastos\\Projects\\pdf-accessibility-remediation\\samples\\opm-71-leave-request\\before.pdf",
+        "status": "non-compliant",
+        "profile": "PDF/UA-1 validation profile",
+        "passed_rules": 94,
+        "failed_rules": 12,
+        "passed_checks": 8320,
+        "failed_checks": 437,
+        "rules": [
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.1",
+            "test_number": 3,
+            "description": "Content shall be marked as Artifact or tagged as real content",
+            "failed_checks": 221,
+            "tags": [
+              "artifact"
+            ],
+            "sample_error": "Content is neither marked as Artifact nor tagged as real content",
+            "rule_id": "7.1-3"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.2",
+            "test_number": 34,
+            "description": "Natural language for text in page content shall be determined",
+            "failed_checks": 121,
+            "tags": [
+              "text",
+              "lang"
+            ],
+            "sample_error": "Natural language for text in page content cannot be determined",
+            "rule_id": "7.2-34"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.2",
+            "test_number": 25,
+            "description": "Natural language in the TU key for form fields shall be determined",
+            "failed_checks": 71,
+            "tags": [
+              "lang",
+              "structure"
+            ],
+            "sample_error": "Natural language in the TU key for form fields cannot be determined",
+            "rule_id": "7.2-25"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.2",
+            "test_number": 23,
+            "description": "Natural language for text in E attribute shall be determined",
+            "failed_checks": 13,
+            "tags": [
+              "lang",
+              "structure"
+            ],
+            "sample_error": "Natural language for text in E attribute cannot be determined",
+            "rule_id": "7.2-23"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.2",
+            "test_number": 42,
+            "description": "Table rows shall have the same number of columns (taking into account column spans)",
+            "failed_checks": 3,
+            "tags": [
+              "structure",
+              "table"
+            ],
+            "sample_error": "Table rows 1 and 2 span different number of columns",
+            "rule_id": "7.2-42"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.2",
+            "test_number": 43,
+            "description": "Table rows shall have the same number of columns (taking into account column spans)",
+            "failed_checks": 2,
+            "tags": [
+              "structure",
+              "table"
+            ],
+            "sample_error": "Table rows 1 and 3 span different number of columns (2 and 1 respectively)",
+            "rule_id": "7.2-43"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "5",
+            "test_number": 1,
+            "description": "The PDF/UA version and conformance level of a file shall be specified using the PDF/UA Identification extension schema",
+            "failed_checks": 1,
+            "tags": [
+              "metadata"
+            ],
+            "sample_error": "The document metadata stream doesn't contain PDF/UA Identification Schema",
+            "rule_id": "5-1"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.1",
+            "test_number": 9,
+            "description": "The Metadata stream in the document's catalog dictionary shall contain a dc:title entry, where dc is the recommended prefix for the Dublin Core metadata schema as defined in the XMP specification, which clearly identifies the document",
+            "failed_checks": 1,
+            "tags": [
+              "metadata"
+            ],
+            "sample_error": "Metadata stream does not contain dc:title",
+            "rule_id": "7.1-9"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.1",
+            "test_number": 10,
+            "description": "The document catalog dictionary shall include a ViewerPreferences dictionary containing a DisplayDocTitle key, whose value shall be true",
+            "failed_checks": 1,
+            "tags": [
+              "syntax"
+            ],
+            "sample_error": "ViewerPreferences dictionary is not present in the document Catalog, or DisplayDocTitle key is set to false or is not present in the ViewerPreferences dictionary (ViewerPreferences = null, DisplayDocTitle = null)",
+            "rule_id": "7.1-10"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.10",
+            "test_number": 1,
+            "description": "Each optional content configuration dictionary that forms the value of the D key, or that is an element in the array that forms the value of the Configs key in the OCProperties dictionary, shall contain the Name key",
+            "failed_checks": 1,
+            "tags": [
+              "syntax"
+            ],
+            "sample_error": "Missing or empty Name entry of the optional content configuration dictionary",
+            "rule_id": "7.10-1"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.10",
+            "test_number": 2,
+            "description": "The AS key shall not appear in any optional content configuration dictionary",
+            "failed_checks": 1,
+            "tags": [
+              "syntax"
+            ],
+            "sample_error": "AS key is present in the optional content configuration dictionary",
+            "rule_id": "7.10-2"
+          },
+          {
+            "specification": "ISO 14289-1:2014",
+            "clause": "7.18.3",
+            "test_number": 1,
+            "description": "Every page on which there is an annotation shall contain in its page dictionary the key Tabs, and its value shall be S",
+            "failed_checks": 1,
+            "tags": [
+              "page"
+            ],
+            "sample_error": "A page with annotation(s) contains Tabs key with value null instead of S",
+            "rule_id": "7.18.3-1"
+          }
+        ],
+        "error": "",
+        "statement": "PDF file is not compliant with Validation Profile requirements."
+      },
+      "triage": {
+        "path": "samples\\opm-71-leave-request\\before.pdf",
+        "size_bytes": 738541,
+        "error": null,
+        "pages": 1,
+        "pdf_version": "1.6",
+        "producer": "Adobe LiveCycle Designer ES 8.2",
+        "tagged": true,
+        "lang": "",
+        "title": "",
+        "no_text_pages": 0,
+        "scanned_pages": 0,
+        "blank_pages": 0,
+        "figures": 0,
+        "figures_missing_alt": 0,
+        "tables": 9,
+        "tables_without_th": 9,
+        "headings": 0,
+        "form_fields": 71,
+        "form_fields_missing_tu": 0,
+        "annot_pages_missing_tabs": 1,
+        "encrypted": false,
+        "pdfua_part": "",
+        "has_outlines": false,
+        "fonts_checked": 3,
+        "fonts_missing_tounicode": 0,
+        "doc_date": "2013-06-04",
+        "complexity": "complex",
+        "needs_remediation": true,
+        "est_cost_usd": 15.0,
+        "est_hours": 0.58,
+        "title2_hints": [
+          "Fillable form: likely in active use to access a service - not exempt; prioritize.",
+          "Possibly pre-existing (last dated 2013-06-04, before 2026-04-26): check the archived/pre-existing document exceptions; forms and documents still used to apply for, access or participate in services are not exempt."
+        ],
+        "checks": [
+          {
+            "id": "tagged",
+            "status": "pass",
+            "reason": "MarkInfo /Marked true and StructTreeRoot present.",
+            "name": "Tagged PDF",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "01 Real content tagged; 06 Metadata (MarkInfo)"
+          },
+          {
+            "id": "language",
+            "status": "fail",
+            "reason": "Catalog /Lang missing; screen readers may use the wrong voice.",
+            "name": "Document language",
+            "wcag": "3.1.1",
+            "matterhorn": "11-006 Natural language (document)"
+          },
+          {
+            "id": "title",
+            "status": "fail",
+            "reason": "No document title in Info or XMP dc:title.",
+            "name": "Document title",
+            "wcag": "2.4.2",
+            "matterhorn": "06-003 dc:title; 07-001/07-002 DisplayDocTitle"
+          },
+          {
+            "id": "scanned",
+            "status": "pass",
+            "reason": "Every page has extractable text.",
+            "name": "Extractable text / OCR",
+            "wcag": "1.1.1, 1.4.5",
+            "matterhorn": "08 OCR"
+          },
+          {
+            "id": "figures",
+            "status": "info",
+            "reason": "No Figure elements tagged.",
+            "name": "Figure alternative text",
+            "wcag": "1.1.1",
+            "matterhorn": "13-004 Figure alt text"
+          },
+          {
+            "id": "tables",
+            "status": "fail",
+            "reason": "9 of 9 Table(s) have no TH header cells.",
+            "name": "Table headers",
+            "wcag": "1.3.1",
+            "matterhorn": "15 Tables"
+          },
+          {
+            "id": "headings",
+            "status": "info",
+            "reason": "No headings (short document).",
+            "name": "Headings",
+            "wcag": "1.3.1, 2.4.6",
+            "matterhorn": "14 Headings"
+          },
+          {
+            "id": "forms",
+            "status": "warn",
+            "reason": "1 page(s) with annotations lack /Tabs /S.",
+            "name": "Form fields & tab order",
+            "wcag": "4.1.2, 3.3.2, 2.4.3",
+            "matterhorn": "28 Annotations (TU, Tabs /S)"
+          },
+          {
+            "id": "security",
+            "status": "pass",
+            "reason": "Not encrypted.",
+            "name": "Security vs. assistive tech",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "26 Security"
+          },
+          {
+            "id": "pdfua",
+            "status": "info",
+            "reason": "No PDF/UA identifier in XMP (informational; not required by WCAG).",
+            "name": "PDF/UA identifier",
+            "wcag": "-",
+            "matterhorn": "06-002 PDF/UA identifier"
+          },
+          {
+            "id": "bookmarks",
+            "status": "info",
+            "reason": "No bookmarks (not expected for <= 20 pages).",
+            "name": "Bookmarks (long docs)",
+            "wcag": "2.4.5",
+            "matterhorn": "- (best practice, PDF2)"
+          },
+          {
+            "id": "fonts",
+            "status": "pass",
+            "reason": "3 font(s) checked; mappings look usable.",
+            "name": "Font Unicode mapping",
+            "wcag": "1.3.1, 4.1.2",
+            "matterhorn": "31 Fonts / 10 Character mappings"
+          }
+        ],
+        "fails": 3,
+        "warns": 1
+      }
+    }
+  ]
+}

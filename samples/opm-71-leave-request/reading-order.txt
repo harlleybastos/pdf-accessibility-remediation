@@ -1,0 +1,312 @@
+[Document] 
+  [Part] 
+    [Sect] 
+      [Div] 
+        [H1] Request for Leave or Approved Absence
+      [Div] 
+        [Div] 
+          [Div] 
+            [P] 1. Name (Last, first, middle)
+          [Div] 
+            [P] 2. Employee or Social Security Number (Enter only the last 4 digits of the Social Security Number (SSN))
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Name (Last, First, Middle Initial)>
+          [Div] 
+            [Form] <Tx field: Enter: Employee Number or last 4 digits of your Social Security Number>
+        [Div] 
+          [Div] 
+            [P] 3. Organization
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Organization>
+      [Div] 
+        [Div] 
+          [Div] 
+            [P] Time
+        [Div] 
+          [Div] 
+            [P] From
+          [Div] 
+            [P] To
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Accrued Annual Leave "From Time">
+          [Div] 
+            [Form] <Tx field: Enter: Accrued Annual Leave "To Time">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Restored Annual Leave "From Time">
+          [Div] 
+            [Form] <Tx field: Enter: Restored Annual Leave "To Time">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Advanced Annual Leave "From Time">
+          [Div] 
+            [Form] <Tx field: Enter: Advanced Annual Leave "To Time">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Accrued Sick Leave "From Time">
+          [Div] 
+            [Form] <Tx field: Enter: Accrued Sick Leave "To Time">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Advanced Sick Leave "From Time">
+          [Div] 
+            [Form] <Tx field: Enter: Advanced Sick Leave "To Time">
+      [Div] 
+        [Div] 
+          [Div] 
+            [P] Date
+        [Div] 
+          [Div] 
+            [P] From
+          [Div] 
+            [P] To
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Accrued Annual Leave "From Date">
+          [Div] 
+            [Form] <Tx field: Enter: Accrued Annual Leave "To Date">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Restored Annual Leave "From Date">
+          [Div] 
+            [Form] <Tx field: Enter: Restored Annual Leave "To Date">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Advanced Annual Leave "From Date">
+          [Div] 
+            [Form] <Tx field: Enter: Advanced Annual Leave "To Date">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Accrued Sick Leave "From Date">
+          [Div] 
+            [Form] <Tx field: Enter: Accrued Sick Leave "To Date">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Advanced Sick Leave "From Date">
+          [Div] 
+            [Form] <Tx field: Enter: Advanced Sick Leave "To Date">
+      [Div] 
+        [Div] 
+          [Div] 
+            [P] 5. Family and Medical Leave
+        [Div] 
+          [Div] 
+            [P] If annual leave, sick leave, or leave without pay will be used under the Family and Medical Leave Act of 1993, please provide the following information:
+        [Div] 
+          [Div] 
+        [Div] 
+          [Div] 
+        [Div] 
+          [Div] 
+        [Div] 
+          [Div] 
+        [Div] 
+          [Div] 
+            [P] Contact your supervisor and/or your personnel office to obtain additional information about your entitlements and responsibilities under the Family and Medical Leave Act.…
+      [Div] 
+        [Div] 
+          [Div] 
+            [P] 4. Type of Leave/Absence (Check appropriate box(es) below)
+        [Div] 
+          [Div] 
+        [Div] 
+          [Div] 
+        [Div] 
+          [Div] 
+        [Div] 
+          [Div] 
+        [Div] 
+          [Div] 
+      [Div] 
+        [Div] 
+          [Div] 
+            [P] Total Hours
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Accrued Annual Leave "Total Hours">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Restored Annual Leave "Total Hours">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Advanced Annual Leave "Total Hours">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Accrued Sick Leave "Total Hours">
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Advanced Sick Leave "Total Hours">
+      [Div] 
+        [P] Accrued Annual Leave
+        [Form] <Btn field: Check this box if type of leave/absence is Accrued Annual Leave.>
+      [Div] 
+        [P] Restored Annual Leave
+        [Form] <Btn field: Check this box if type of leave/absence is Restored Annual Leave.>
+      [Div] 
+        [P] Advanced Annual Leave
+        [Form] <Btn field: Check this box if type of leave/absence is Advanced Annual Leave.>
+      [Div] 
+        [P] I hereby invoke my entitlement to Family and Medical Leave for:
+        [Form] <Btn field: Check this box if you are invoking your entitlement to Family and Medical Leave.>
+      [Div] 
+        [P] Birth/Adoption/Foster Care
+        [Form] <Btn field: Check this box if your Family and Medical Leave is for: Birth/Adoption/Foster Care.>
+      [Div] 
+        [P] Serious health condition of spouse, son, daughter, or parent
+        [Form] <Btn field: Check this box if your Family and Medical Leave is for: Serious health condition of spouse, son, daughter, or parent.>
+      [Div] 
+        [P] Serious health condition of self
+        [Form] <Btn field: Check this box if your Family and Medical Leave is for: serious health condition of self.>
+      [Div] 
+        [P] Care of family member with a serious health condition
+        [Form] <Btn field: Check this box if sick leave purpose is: Care of family member with a serious health condition.>
+      [Div] 
+        [P] Other
+        [Form] <Btn field: Check this box if sick leave purpose is: Other.>
+      [Div] 
+        [P] Compensatory Time Off
+        [Form] <Btn field: Check this box if you are taking Compensatory Time Off.>
+      [Div] 
+        [P] Other Paid Absence (Specify in Remarks)
+        [Form] <Btn field: Check this box if you are taking Other Paid Absence (Specify in the Remarks Section).>
+      [Div] 
+        [P] Leave Without Pay
+        [Form] <Btn field: Check this box if you are taking Leave Without Pay.>
+      [Div] 
+        [Div] 
+          [Div] 
+            [P] 6. Remarks:
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: "Remarks" here>
+        [Div] 
+          [Div] 
+            [P] 7. Certification: I hereby request leave/approved absence from duty as indicated above and certify that such leave/absence is requested for the purpose(s) indicated. I un…
+        [Div] 
+          [Div] 
+            [P] 7a. Employee Signature
+          [Div] 
+            [P] 7b. Date
+        [Div] 
+          [Div] 
+            [Form] <Sig field: Enter employee signature>
+          [Div] 
+            [Form] <Tx field: Enter: Date Employee Signed>
+        [Div] 
+          [Div] 
+            [P] 8a. Official Action on Request:
+          [Div] 
+          [Div] 
+          [Div] 
+            [P] (If disapproved, give reason. If annual leave, initiate action to reschedule.)
+        [Div] 
+          [Div] 
+            [P] 8b. Reason for Disapproval:
+        [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Reason for Disapproval>
+        [Div] 
+          [Div] 
+            [P] 8c. Supervisor Signature
+          [Div] 
+            [P] 8d. Date
+        [Div] 
+          [Div] 
+            [Form] <Sig field: Enter manager or supervisor signature>
+          [Div] 
+            [Form] <Tx field: Enter: Date Supervisor Signed>
+        [Div] 
+          [Div] 
+            [P] PRIVACY ACT STATEMENT Section 6311 of Title 5, United States Code, authorizes collection of this information. The primary use of this information is by management and you…
+            [P] Public Law 104-134 (April 26, 1996) requires that any person doing business with the Federal Government furnish a social security number or tax identification number. Thi…
+      [Div] 
+        [P] Approved
+        [Form] <Btn field: Check this box if Official Action on Request is: Approved>
+      [Div] 
+        [P] Disapproved
+        [Form] <Btn field: Check this box if Official Action on Request is: Disapproved>
+      [Div] 
+        [P] OPM Form 71 Rev. September 2009 Formerly Standard Form (SF) 71 Previous editions usable
+      [Div] 
+        [P] Office of Personnel Management 5 CFR 630
+      [Div] 
+        [P] Local Reproduction Authorized
+      [Div] 
+        [Form] <Btn field: Clear Form Button. Press the enter key to clear form.>
+      [Div] 
+        [Form] <Btn field: Print Form Button. Press the enter key to print the form.>
+      [Div] 
+        [Form] <Btn field: This is the Save Form button. Press the enter key to save the form.>
+      [Div] 
+        [P] Accrued Sick Leave
+        [Form] <Btn field: Check this box if type of leave/absence is Accrued Sick Leave.>
+      [Div] 
+        [P] Advanced Sick Leave
+        [Form] <Btn field: Check this box if type of leave/absence is Advanced Sick Leave.>
+      [Div] 
+        [Div] 
+          [Div] 
+            [P] 
+            [P] Purpose:
+          [Div] 
+        [Div] 
+          [Div] 
+            [P] 
+        [Div] 
+          [Div] 
+            [P] 
+        [Div] 
+          [Div] 
+            [P] 
+        [Div] 
+          [Div] 
+            [P] 
+      [Div] 
+        [P] Illness/injury/incapacitation of requesting employee
+        [Form] <Btn field: Check this box if sick leave purpose is: Illness/injury/incapacitation of requesting employee.>
+      [Div] 
+        [P] Medical/dental/optical examination of requesting employee
+        [Form] <Btn field: Check this box if sick leave purpose is: Medical/dental/optical examination of requesting employee.>
+      [Div] 
+        [P] Care of family member, including medical/dental/optical examination of family member, or bereavement
+        [Form] <Btn field: Check this box if sick leave purpose is: Care of family member, including medical/dental/optical examination of family member, or bereavement.>
+      [Div] 
+        [Div] 
+          [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Compensatory Time Off "From Date">
+          [Div] 
+            [Form] <Tx field: Enter: Compensatory Time Off "To Date">
+          [Div] 
+            [Form] <Tx field: Enter: Compensatory Time Off "From Time">
+          [Div] 
+            [Form] <Tx field: Enter: Compensatory Time Off "To Time">
+          [Div] 
+            [Form] <Tx field: Enter: Compensatory Time Off "Total Hours">
+        [Div] 
+          [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Other Paid Absence "From Date">
+          [Div] 
+            [Form] <Tx field: Enter: Other Paid Absence "To Date">
+          [Div] 
+            [Form] <Tx field: Enter: Other Paid Absence "From Time">
+          [Div] 
+            [Form] <Tx field: Enter: Other Paid Absence "To Time">
+          [Div] 
+            [Form] <Tx field: Enter: Other Paid Absence "Total Hours">
+        [Div] 
+          [Div] 
+          [Div] 
+            [Form] <Tx field: Enter: Leave Without Pay "From Date">
+          [Div] 
+            [Form] <Tx field: Enter: Leave Without Pay "To Date">
+          [Div] 
+            [Form] <Tx field: Enter: Leave Without Pay "From Time">
+          [Div] 
+            [Form] <Tx field: Enter: Leave Without Pay "To Time">
+          [Div] 
+            [Form] <Tx field: Enter: Leave Without Pay "Total Hours">
